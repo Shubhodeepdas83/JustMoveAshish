@@ -77,8 +77,6 @@ function onResults(results) {
   // Hide the spinner.
   document.body.classList.add('loaded');
 
-  // Update the frame rate.
-  fpsControl.tick();
 
   // Draw the overlays.
   canvasCtx.save();
@@ -177,7 +175,7 @@ new ControlPanel(controlsElement, {
       minTrackingConfidence: 0.5
     })
     .add([
-      //new StaticText({title: 'MediaPipe Pose'}),
+      new StaticText({title: 'MediaPipe Pose'}),
       fpsControl,
       new Toggle({title: 'Selfie Mode', field: 'selfieMode'}),
       new Slider({

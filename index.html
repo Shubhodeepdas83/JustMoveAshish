@@ -2,8 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>punching boxes</title>
-    <<link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.3/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.3.1621277220/pose.js" crossorigin="anonymous"></script>
   </head>
   <body>
   <div class="container">
@@ -17,7 +22,7 @@
      </div>
      <a class="abs logo" href="http://www.mediapipe.dev" target="_blank">
        <div style="display: flex;align-items: center;bottom: 0;right: 10px;">
-         <img class="logo" src="logo_white.png" alt="" style="
+         <img class="logo" src="" alt="" style="
            height: 50px;">
          <span class="title">MediaPipe</span>
        </div>
@@ -32,6 +37,9 @@
    </div>
    <div class="control-panel">
    </div>
+   <!--<script type="module" src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+   <script type="module" src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>-->
+
+   <script src="js/index.js"></script>
   </body>
-  <<script src="js/punching_boxes.js" charset="utf-8"></script>
 </html>
